@@ -32,8 +32,8 @@ public class Tyre_Search extends javax.swing.JFrame {
         es = new Essencials();
         es.setCenter(this);
         
-        String[] headings = {"Tyre ID", "No. Rims", "Vehicle Group", "Tyre Size1", "Tyre Size2", "Tyre Size3", "Tyre Size4", "Rack ID", "Rack Row", "Price", "Proce Gen.", "Dis 1", "Dis 2", "Dis 3"};
-        es.customTBHEAD(jTable1, headings, 14, new java.awt.Color(224,224,224));
+        String[] headings = {"Tyre ID", "Brand", "No. Rims", "Vehicle Group", "Tyre Size1", "Tyre Size2", "Tyre Size3", "Tyre Size4", "Rack ID", "Rack Row", "Price", "Proce Gen.", "Dis 1", "Dis 2", "Dis 3"};
+        es.customTBHEAD(jTable1, headings, 15, new java.awt.Color(224,224,224));
         tbl = (DefaultTableModel) jTable1.getModel();
         
         showData();
@@ -54,14 +54,16 @@ public class Tyre_Search extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jTable1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(224, 224, 224)));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8", "Title 9", "Title 10", "Title 11", "Title 12", "Title 13", "Title 14"
+                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8", "Title 9", "Title 10", "Title 11", "Title 12", "Title 13", "Title 14", "Title 15"
             }
         ));
+        jTable1.setRowHeight(23);
         jScrollPane1.setViewportView(jTable1);
 
         jPanel2.setBackground(new java.awt.Color(96, 125, 139));
@@ -151,8 +153,8 @@ public class Tyre_Search extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -237,6 +239,7 @@ public class Tyre_Search extends javax.swing.JFrame {
                 v.add(rs.getString(12));
                 v.add(rs.getString(13));
                 v.add(rs.getString(14));
+                v.add(rs.getString(15));
                 tbl.addRow(v);
             }
         } catch (Exception e) {

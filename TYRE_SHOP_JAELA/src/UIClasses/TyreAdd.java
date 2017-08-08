@@ -63,7 +63,7 @@ public class TyreAdd extends javax.swing.JFrame {
         tftyresize4 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        tftyresize5 = new javax.swing.JTextField();
+        tfbrand = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         tfprice = new javax.swing.JTextField();
@@ -279,13 +279,13 @@ public class TyreAdd extends javax.swing.JFrame {
 
         jLabel17.setFont(new java.awt.Font("Noto Sans Sinhala", 0, 11)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel17.setText("ටයරයේ ප්‍රමාණය");
+        jLabel17.setText("ටයර මාදිලිය");
 
-        tftyresize5.setBackground(new java.awt.Color(252, 252, 252));
-        tftyresize5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 16)); // NOI18N
-        tftyresize5.setForeground(new java.awt.Color(102, 102, 102));
-        tftyresize5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(220, 220, 220)));
-        tftyresize5.setPreferredSize(new java.awt.Dimension(59, 28));
+        tfbrand.setBackground(new java.awt.Color(252, 252, 252));
+        tfbrand.setFont(new java.awt.Font("Segoe UI Semibold", 0, 16)); // NOI18N
+        tfbrand.setForeground(new java.awt.Color(102, 102, 102));
+        tfbrand.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(220, 220, 220)));
+        tfbrand.setPreferredSize(new java.awt.Dimension(59, 28));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -299,36 +299,34 @@ public class TyreAdd extends javax.swing.JFrame {
                         .addComponent(tftyresize3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(9, 9, 9)
                         .addComponent(tftyresize4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tfrackid, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(comtyreid, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(1, 1, 1)
+                        .addComponent(bu_gen_combo3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(tfrackid, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(comtyreid, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(1, 1, 1)
-                                .addComponent(bu_gen_combo3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel17, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(comvehiclegroup, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(comnoofrim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(1, 1, 1)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(bu_gen_combo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(bu_gen_combo1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(tftyresize1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                .addGap(9, 9, 9)
-                                .addComponent(tftyresize2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(tftyresize5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addComponent(jLabel7)
-                        .addComponent(jLabel8)
-                        .addComponent(jLabel9)
-                        .addComponent(jLabel3)))
+                            .addComponent(comvehiclegroup, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(comnoofrim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(1, 1, 1)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(bu_gen_combo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bu_gen_combo1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel4)
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(tftyresize1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(9, 9, 9)
+                        .addComponent(tftyresize2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(tfbrand, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel3))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -343,7 +341,7 @@ public class TyreAdd extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel17)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tftyresize5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tfbrand, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -568,7 +566,7 @@ public class TyreAdd extends javax.swing.JFrame {
     }//GEN-LAST:event_bu_gen_combo1ActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-        JTextField[] jt = {comtyreid, comnoofrim, comvehiclegroup, tftyresize1, tftyresize2, tfpricegen};
+        JTextField[] jt = {comtyreid, tfbrand, comnoofrim, comvehiclegroup, tftyresize1, tftyresize2, tfpricegen};
         boolean result = es.checkEMPTY(jt);
         if(!result){
             try {
@@ -576,14 +574,14 @@ public class TyreAdd extends javax.swing.JFrame {
                 if(rs.next()){
                     try {
                         DB.Execute("DELETE * FROM rim WHERE tyre_id = '"+comtyreid.getText()+"'");
-                        DB.Execute("INSERT INTO rim VALUES('"+comtyreid.getText()+"', '"+comnoofrim.getText()+"', '"+comvehiclegroup.getText()+"', '"+tftyresize1.getText()+"', '"+tftyresize2.getText()+"', '"+tftyresize3.getText()+"', '"+tftyresize4.getText()+"', '"+tfrackid.getText()+"', '"+tfrackrow.getText()+"', '"+tfprice.getText()+"', '"+tfpricegen.getText()+"', '"+tfdis1.getText()+"', '"+tfdis2.getText()+"', '"+tfdis3.getText()+"')");
+                        DB.Execute("INSERT INTO rim VALUES('"+comtyreid.getText()+"', '"+tfbrand.getText()+"', '"+comnoofrim.getText()+"', '"+comvehiclegroup.getText()+"', '"+tftyresize1.getText()+"', '"+tftyresize2.getText()+"', '"+tftyresize3.getText()+"', '"+tftyresize4.getText()+"', '"+tfrackid.getText()+"', '"+tfrackrow.getText()+"', '"+tfprice.getText()+"', '"+tfpricegen.getText()+"', '"+tfdis1.getText()+"', '"+tfdis2.getText()+"', '"+tfdis3.getText()+"')");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
                 else{
                     try {
-                        DB.Execute("INSERT INTO rim VALUES('"+comtyreid.getText()+"', '"+comnoofrim.getText()+"', '"+comvehiclegroup.getText()+"', '"+tftyresize1.getText()+"', '"+tftyresize2.getText()+"', '"+tftyresize3.getText()+"', '"+tftyresize4.getText()+"', '"+tfrackid.getText()+"', '"+tfrackrow.getText()+"', '"+tfprice.getText()+"', '"+tfpricegen.getText()+"', '"+tfdis1.getText()+"', '"+tfdis2.getText()+"', '"+tfdis3.getText()+"')");
+                        DB.Execute("INSERT INTO rim VALUES('"+comtyreid.getText()+"', '"+tfbrand.getText()+"', '"+comnoofrim.getText()+"', '"+comvehiclegroup.getText()+"', '"+tftyresize1.getText()+"', '"+tftyresize2.getText()+"', '"+tftyresize3.getText()+"', '"+tftyresize4.getText()+"', '"+tfrackid.getText()+"', '"+tfrackrow.getText()+"', '"+tfprice.getText()+"', '"+tfpricegen.getText()+"', '"+tfdis1.getText()+"', '"+tfdis2.getText()+"', '"+tfdis3.getText()+"')");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -591,7 +589,7 @@ public class TyreAdd extends javax.swing.JFrame {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            JTextField[] jt2 = {comtyreid, comnoofrim, comvehiclegroup, tftyresize1, tftyresize2, tftyresize3, tftyresize4, tfrackid, tfrackrow, tfprice, tfpricegen, tfdis1, tfdis2, tfdis3};
+            JTextField[] jt2 = {comtyreid, tfbrand, comnoofrim, comvehiclegroup, tftyresize1, tftyresize2, tftyresize3, tftyresize4, tfrackid, tfrackrow, tfprice, tfpricegen, tfdis1, tfdis2, tfdis3};
             es.clearTFS(jt2);
         }
     }//GEN-LAST:event_btnSaveActionPerformed
@@ -641,6 +639,7 @@ public class TyreAdd extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JTextField tfbrand;
     private javax.swing.JTextField tfdis1;
     private javax.swing.JTextField tfdis2;
     private javax.swing.JTextField tfdis3;
@@ -652,6 +651,5 @@ public class TyreAdd extends javax.swing.JFrame {
     private javax.swing.JTextField tftyresize2;
     private javax.swing.JTextField tftyresize3;
     private javax.swing.JTextField tftyresize4;
-    private javax.swing.JTextField tftyresize5;
     // End of variables declaration//GEN-END:variables
 }
