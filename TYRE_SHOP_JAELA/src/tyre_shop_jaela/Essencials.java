@@ -57,6 +57,7 @@ public class Essencials {
     public Essencials() {
         btfin = new MatteBorder(0, 0, 1, 0, new Color(0, 153, 204));
         btfout = new MatteBorder(0, 0, 1, 0, new Color(220, 220, 220));
+        System.out.println("test");
     }
 
     public void setCenter(JFrame frame) {
