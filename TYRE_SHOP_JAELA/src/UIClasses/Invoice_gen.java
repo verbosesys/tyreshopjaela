@@ -34,6 +34,8 @@ public class Invoice_gen extends javax.swing.JFrame {
         String[] headings = {"Item ID", "Item Name", "Warranty", "Qty", "Price", "Discount"};
         es.customTBHEAD(jTable1, headings, 6, new java.awt.Color(224, 224, 224));
         tbl = (DefaultTableModel) jTable1.getModel();
+    
+        System.out.println("ggg");
     }
 
     /**
